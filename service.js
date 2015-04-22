@@ -1,4 +1,11 @@
 angular.module('eirwin.angular-hello-bower',[])
   .service('helloBowerService',function(){ 
-    console.log('hello bower');
+   
+    var sayHelloBower = function(){
+      console.log('Hello Bower');
+    }
+    
+    return {
+      sayHelloBower:sayHelloBower
+    }
   });
